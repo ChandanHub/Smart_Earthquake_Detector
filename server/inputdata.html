@@ -1,0 +1,43 @@
+<DOCTYPE! html>
+ <html>
+  <head>
+   <title>Send Data</title>
+<style>
+   
+   div.input {
+	position: static;
+	height: 200px;
+    width: 25%;
+    border: 1px solid blue;
+	margin-top: 150px;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: 500px;
+    background-color: NavajoWhite;
+	
+}
+</style>
+   <script language="javascript" type="text/javascript" >
+   function checkinput()
+   {
+if (document.det.vibration.value=="")
+  {
+  alert("Enter Valid Data");
+  document.det.vibration.focus();
+  return false;
+  }
+ }
+
+   </script>
+  </head>
+    <body bgcolor="DarkOliveGreen">
+<div class="input">
+<form action="collector.php" name="input" onsubmit="return checkinput()" method="POST">
+<br><br><br><br>
+&emsp;&emsp;&emsp;Data: &emsp; <input type="text" name="vibration" /><br><br>
+<center><input type="submit"  /></center>
+<br><br>
+</form>
+</div>
+   </body>
+ </html>
